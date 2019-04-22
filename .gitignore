@@ -1,0 +1,9 @@
+# settings
+quickaid/settings/local_settings.py
+
+# virtual env
+venv
+env
+
+# .idea
+.ideagit remote -v
