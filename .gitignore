@@ -6,4 +6,10 @@ venv
 env
 
 # .idea
-.ideagit remote -v
+.idea
+
+# static files and media files
+static
+staticfiles
+media
+mediafiles
