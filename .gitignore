@@ -13,3 +13,5 @@ static
 staticfiles
 media
 mediafiles
+quickaid/logs
+celerybeat-schedule
