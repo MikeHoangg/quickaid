@@ -1,4 +1,5 @@
 import os
+import logging.config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -124,7 +125,7 @@ SITE_ID = 1
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR,  '../static/'),
+    os.path.join(BASE_DIR, '../static/'),
 )
 
 STATIC_URL = '/static/'
@@ -157,3 +158,13 @@ REST_AUTH_SERIALIZERS = {
     'LOGIN_SERIALIZER': 'core.serializers.LoginSerializer',
 }
 
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],
+        },
+    },
+}
+
+CELERY_BROKER_URL = 'redis://localhost:6379'
