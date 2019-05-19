@@ -58,6 +58,7 @@ class Schedule(models.Model):
     time = models.TimeField(verbose_name=_('time'))
     days = MultiSelectField(verbose_name=_('days'), choices=DAYS_CHOICES, min_choices=1)
     active = models.BooleanField(verbose_name=_('active'), default=True)
+    user = models.ForeignKey(to='core.User', on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = _('schedule')
