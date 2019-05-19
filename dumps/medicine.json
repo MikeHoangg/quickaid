@@ -1,0 +1,68 @@
+[
+  {
+    "model": "medicine.schedule",
+    "pk": 1,
+    "fields": {
+      "reason": "test 123",
+      "description": "test 456",
+      "expiration_date": null,
+      "time": "22:10:00",
+      "days": "tue,sat,evr,wed,mon",
+      "active": true,
+      "user": 2
+    }
+  },
+  {
+    "model": "medicine.notification",
+    "pk": 1,
+    "fields": {
+      "schedule": 1,
+      "created": "2019-05-19T23:15:24.139Z",
+      "pending": true
+    }
+  },
+  {
+    "model": "medicine.statistics",
+    "pk": 1,
+    "fields": {
+      "min_heart_rate": 67,
+      "max_heart_rate": 163,
+      "glucose_rate": 6.24,
+      "protein_rate": 83.0,
+      "albumin_rate": 10.0,
+      "myoglobin_rate": 17.0,
+      "ferritin_rate": 129.0,
+      "cholesterol_rate": 4.0,
+      "temperature": 39.09,
+      "created": "2019-05-19T22:29:09.609Z",
+      "user": 2
+    }
+  },
+  {
+    "model": "medicine.diagnosis",
+    "pk": 1,
+    "fields": {
+      "verdict": "test",
+      "created": "2019-05-19T22:31:04.535Z",
+      "statistics": 1
+    }
+  },
+  {
+    "model": "medicine.diagnosis",
+    "pk": 2,
+    "fields": {
+      "verdict": "test1",
+      "created": "2019-05-19T22:31:07.748Z",
+      "statistics": 1
+    }
+  },
+  {
+    "model": "medicine.diagnosis",
+    "pk": 3,
+    "fields": {
+      "verdict": "test3",
+      "created": "2019-05-19T22:31:10.494Z",
+      "statistics": 1
+    }
+  }
+]

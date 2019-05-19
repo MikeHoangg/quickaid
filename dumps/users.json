@@ -1,19 +1,40 @@
 [
-{
-  "model": "core.user",
-  "pk": 1,
-  "fields": {
-    "password": "pbkdf2_sha256$150000$o7Mf3rtQPZQa$iM8b8s9lAWqyC+t0obhbYGqF1dpJ+IxelAMUfeT7Yz8=",
-    "last_login": "2019-04-24T05:48:46.528Z",
-    "is_superuser": true,
-    "email": "admin@quickaid.com",
-    "first_name": "",
-    "last_name": "",
-    "is_staff": true,
-    "is_active": true,
-    "date_joined": "2019-04-24T05:48:41.628Z",
-    "groups": [],
-    "user_permissions": []
+  {
+    "model": "core.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$52cTuklpFjI2$pdR7O5KQwGWD/D18Hi/fIwu8WpxrBF9F+23+i4oJAWQ=",
+      "last_login": null,
+      "is_superuser": true,
+      "email": "admin@quickaid.com",
+      "age": 18,
+      "gender": "male",
+      "first_name": "",
+      "last_name": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2019-05-19T18:49:24.809Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "core.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$150000$gV9nRedaSSlo$LutrmFy855m7F+bobZm+8E0qJkKy38DoPsPgONoMX7Q=",
+      "last_login": "2019-05-19T18:50:39.041Z",
+      "is_superuser": false,
+      "email": "testuser@quickaid.com",
+      "age": 18,
+      "gender": "male",
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2019-05-19T18:50:38.745Z",
+      "groups": [],
+      "user_permissions": []
+    }
   }
-}
 ]
