@@ -3,5 +3,5 @@ from django.urls import path
 from . import consumers
 
 websocket_urlpatterns = [
-    path('notifications/', consumers.NotificationConsumer),
+    path('notifications/<int:user_id>', consumers.NotificationConsumer),
 ]
