@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'channels',
 
     'core.apps.CoreConfig',
+    'medicine.apps.MedicineConfig',
 ]
 
 MIDDLEWARE = [
