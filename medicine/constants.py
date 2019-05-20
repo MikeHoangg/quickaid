@@ -3,7 +3,7 @@ from django.utils.translation import gettext as _
 
 User = get_user_model()
 
-HEART_RATE_UNIT = _('mm Hg')
+HEART_PRESSURE_UNIT = _('mm Hg')
 GLUCOSE_RATE_UNIT = CHOLESTEROL_RATE_UNIT = _('mmol/l')
 TEMPERATURE_UNIT = _('°C')
 PROTEIN_RATE_UNIT = ALBUMIN_RATE_UNIT = _('g/l')
@@ -11,7 +11,7 @@ MYOGLOBIN_RATE_UNIT = FERRITIN_RATE_UNIT = _('mcg/l')
 
 TEMPERATURE_NORM = 36.6
 
-HEART_RATE_NORM = {
+HEART_PRESSURE = {
     User.MALE: {
         20: {
             'norm_min': 76,
