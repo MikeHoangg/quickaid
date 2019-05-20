@@ -10,8 +10,8 @@ class PatchedMultiSelectField(MultiSelectField):
 
 
 class Statistics(models.Model):
-    min_heart_rate = models.PositiveIntegerField(verbose_name=_('min heart rate'))
-    max_heart_rate = models.PositiveIntegerField(verbose_name=_('max heart rate'))
+    min_blood_pressure   = models.PositiveIntegerField(verbose_name=_('min pressure'))
+    max_blood_pressure = models.PositiveIntegerField(verbose_name=_('max pressure'))
     glucose_rate = models.FloatField(verbose_name=_('glucose rate'))
     protein_rate = models.FloatField(verbose_name=_('protein rate'))
     albumin_rate = models.FloatField(verbose_name=_('albumin rate'))
@@ -75,3 +75,7 @@ class Notification(models.Model):
     schedule = models.ForeignKey(verbose_name=_('schedule'), to='medicine.Schedule', on_delete=models.CASCADE)
     created = models.DateTimeField(verbose_name='created', auto_now_add=True, editable=False)
     pending = models.BooleanField(verbose_name=_('pending'), default=True)
+
+    class Meta:
+        verbose_name = _('notification')
+        verbose_name_plural = _('notifications')

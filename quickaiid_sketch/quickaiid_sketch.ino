@@ -15,8 +15,8 @@ void loop() {
   DynamicJsonDocument data(1024);
   int heart_rate_1 = getIntData(60, 170);
   int heart_rate_2 = getIntData(60, 170);
-  data["max_heart_rate"] = heart_rate_1 > heart_rate_2 ? heart_rate_1: heart_rate_2;
-  data["min_heart_rate"] = heart_rate_1 < heart_rate_2 ? heart_rate_1: heart_rate_2;
+  data["max_blood_pressure"] = heart_rate_1 > heart_rate_2 ? heart_rate_1: heart_rate_2;
+  data["min_blood_pressure"] = heart_rate_1 < heart_rate_2 ? heart_rate_1: heart_rate_2;
   data["glucose_rate"] = getFloatData(2, 8);
   data["protein_rate"] = getIntData(50, 90);
   data["albumin_rate"] = getIntData(10, 60);

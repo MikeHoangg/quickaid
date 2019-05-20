@@ -19,8 +19,8 @@ class Migration(migrations.Migration):
             name='Statistics',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('min_heart_rate', models.PositiveIntegerField(verbose_name='min heart rate')),
-                ('max_heart_rate', models.PositiveIntegerField(verbose_name='max heart rate')),
+                ('min_blood_pressure', models.PositiveIntegerField(verbose_name='min heart rate')),
+                ('max_blood_pressure', models.PositiveIntegerField(verbose_name='max heart rate')),
                 ('glucose_rate', models.FloatField(verbose_name='glucose rate')),
                 ('protein_rate', models.FloatField(verbose_name='protein rate')),
                 ('albumin_rate', models.FloatField(verbose_name='albumin rate')),

@@ -15,7 +15,7 @@ class StatisticsSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Statistics
-        fields = ('id', 'url', 'min_heart_rate', 'max_heart_rate', 'glucose_rate', 'protein_rate', 'albumin_rate',
+        fields = ('id', 'url', 'min_blood_pressure', 'max_blood_pressure', 'glucose_rate', 'protein_rate', 'albumin_rate',
                   'myoglobin_rate', 'ferritin_rate', 'cholesterol_rate', 'temperature', 'created', 'diagnosis_set')
 
 
