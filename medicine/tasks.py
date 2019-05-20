@@ -17,7 +17,7 @@ schedule = {
     'get_statistics': {
         'task': 'get_statistics',
         'schedule': crontab(minute="*/1")
-        # 'schedule': crontab(minute=0,hour='*/1')
+        # 'schedule': crontab(minute=0, hour='*/1')
     }
 }
 
