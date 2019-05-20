@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-19 23:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: core/models.py:43
+msgid "male"
+msgstr ""
+
+#: core/models.py:44
+msgid "female"
+msgstr ""
+
+#: core/models.py:47
+msgid "email address"
+msgstr ""
+
+#: core/models.py:48
+msgid "age"
+msgstr ""
+
+#: core/models.py:49
+msgid "gender"
+msgstr ""
+
+#: core/models.py:50
+msgid "first name"
+msgstr ""
+
+#: core/models.py:51
+msgid "last name"
+msgstr ""
+
+#: core/models.py:53
+msgid "staff status"
+msgstr ""
+
+#: core/models.py:55
+msgid "Designates whether the user can log into this admin site."
+msgstr ""
+
+#: core/models.py:58 medicine/models.py:66
+msgid "active"
+msgstr ""
+
+#: core/models.py:61
+msgid ""
+"Designates whether this user should be treated as active. Unselect this "
+"instead of deleting accounts."
+msgstr ""
+
+#: core/models.py:65
+msgid "date joined"
+msgstr ""
+
+#: core/models.py:87 medicine/models.py:67
+msgid "user"
+msgstr ""
+
+#: core/models.py:88
+msgid "users"
+msgstr ""
+
+#: core/serializers.py:25
+msgid "The two password fields didn't match."
+msgstr ""
+
+#: core/serializers.py:27
+msgid "User with such email already exists."
+msgstr ""
+
+#: core/serializers.py:46
+msgid "Must include \"email\" and \"password\"."
+msgstr ""
+
+#: core/serializers.py:57
+msgid "User account is disabled."
+msgstr ""
+
+#: core/serializers.py:61
+msgid "Unable to log in with provided credentials."
+msgstr ""
+
+#: medicine/constants.py:6
+msgid "mm Hg"
+msgstr ""
+
+#: medicine/constants.py:7
+msgid "mmol/l"
+msgstr ""
+
+#: medicine/constants.py:8
+msgid "°C"
+msgstr ""
+
+#: medicine/constants.py:9
+msgid "g/l"
+msgstr ""
+
+#: medicine/constants.py:10
+msgid "mcg/l"
+msgstr ""
+
+#: medicine/models.py:13
+msgid "min pressure"
+msgstr ""
+
+#: medicine/models.py:14
+msgid "max pressure"
+msgstr ""
+
+#: medicine/models.py:15
+msgid "glucose rate"
+msgstr ""
+
+#: medicine/models.py:16
+msgid "protein rate"
+msgstr ""
+
+#: medicine/models.py:17
+msgid "albumin rate"
+msgstr ""
+
+#: medicine/models.py:18
+msgid "myoglobin rate"
+msgstr ""
+
+#: medicine/models.py:19
+msgid "ferritin rate"
+msgstr ""
+
+#: medicine/models.py:20
+msgid "cholesterol rate"
+msgstr ""
+
+#: medicine/models.py:21
+msgid "temperature"
+msgstr ""
+
+#: medicine/models.py:26 medicine/models.py:27
+msgid "statistics"
+msgstr ""
+
+#: medicine/models.py:31
+msgid "verdict"
+msgstr ""
+
+#: medicine/models.py:36 medicine/models.py:37
+msgid "diagnosis"
+msgstr ""
+
+#: medicine/models.py:61
+msgid "reason"
+msgstr ""
+
+#: medicine/models.py:62
+msgid "description"
+msgstr ""
+
+#: medicine/models.py:63
+msgid "expiration date"
+msgstr ""
+
+#: medicine/models.py:64
+msgid "time"
+msgstr ""
+
+#: medicine/models.py:65
+msgid "days"
+msgstr ""
+
+#: medicine/models.py:70 medicine/models.py:75
+msgid "schedule"
+msgstr ""
+
+#: medicine/models.py:71
+msgid "schedules"
+msgstr ""
+
+#: medicine/models.py:77
+msgid "pending"
+msgstr ""
+
+#: medicine/models.py:80
+msgid "notification"
+msgstr ""
+
+#: medicine/models.py:81
+msgid "notifications"
+msgstr ""

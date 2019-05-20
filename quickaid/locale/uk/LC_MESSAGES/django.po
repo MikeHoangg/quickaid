@@ -1,0 +1,210 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-19 23:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: core/models.py:43
+msgid "male"
+msgstr "чоловіча"
+
+#: core/models.py:44
+msgid "female"
+msgstr "жіноча"
+
+#: core/models.py:47
+msgid "email address"
+msgstr "електронна пошта"
+
+#: core/models.py:48
+msgid "age"
+msgstr "вік"
+
+#: core/models.py:49
+msgid "gender"
+msgstr "стать"
+
+#: core/models.py:50
+msgid "first name"
+msgstr "ім'я"
+
+#: core/models.py:51
+msgid "last name"
+msgstr "прізвище"
+
+#: core/models.py:53
+msgid "staff status"
+msgstr "статус персоналу"
+
+#: core/models.py:55
+msgid "Designates whether the user can log into this admin site."
+msgstr "Визначає, чи може користувач увійти на адміністративний сайт."
+
+#: core/models.py:58 medicine/models.py:66
+msgid "active"
+msgstr "активний"
+
+#: core/models.py:61
+msgid ""
+"Designates whether this user should be treated as active. Unselect this "
+"instead of deleting accounts."
+msgstr ""
+"Визначає, чи є користувач активним. Скасуйте вибір замість видалення "
+"облікового запису."
+
+#: core/models.py:65
+msgid "date joined"
+msgstr "дата реєстрування"
+
+#: core/models.py:87 medicine/models.py:67
+msgid "user"
+msgstr "користувач"
+
+#: core/models.py:88
+msgid "users"
+msgstr "користувачі"
+
+#: core/serializers.py:25
+msgid "The two password fields didn't match."
+msgstr "Поля двох поролів не співпадають."
+
+#: core/serializers.py:27
+msgid "User with such email already exists."
+msgstr "Користувач з такою електронною поштою вже зареєстрований."
+
+#: core/serializers.py:46
+msgid "Must include \"email\" and \"password\"."
+msgstr "Треба зазначити \"електронну пошту\" та \"пароль\"."
+
+#: core/serializers.py:57
+msgid "User account is disabled."
+msgstr "Обліковий запис користувача деактивований."
+
+#: core/serializers.py:61
+msgid "Unable to log in with provided credentials."
+msgstr "Не вдалося увійти з наданими даними."
+
+#: medicine/constants.py:6
+msgid "mm Hg"
+msgstr "мм Рт.Ст."
+
+#: medicine/constants.py:7
+msgid "mmol/l"
+msgstr "ммоль/л"
+
+#: medicine/constants.py:8
+msgid "°C"
+msgstr "°C"
+
+#: medicine/constants.py:9
+msgid "g/l"
+msgstr "г/л"
+
+#: medicine/constants.py:10
+msgid "mcg/l"
+msgstr "мкг/л"
+
+#: medicine/models.py:13
+msgid "min pressure"
+msgstr "нижній поріг кров'яного тиску"
+
+#: medicine/models.py:14
+msgid "max pressure"
+msgstr "вурхній поріг кров'яного тиску"
+
+#: medicine/models.py:15
+msgid "glucose rate"
+msgstr "концентрація глюкози"
+
+#: medicine/models.py:16
+msgid "protein rate"
+msgstr "концентрація протеїну"
+
+#: medicine/models.py:17
+msgid "albumin rate"
+msgstr "концентрація альбуміну"
+
+#: medicine/models.py:18
+msgid "myoglobin rate"
+msgstr "концентрація міоглобіну"
+
+#: medicine/models.py:19
+msgid "ferritin rate"
+msgstr "концентрація заліза"
+
+#: medicine/models.py:20
+msgid "cholesterol rate"
+msgstr "концентрація холестерину"
+
+#: medicine/models.py:21
+msgid "temperature"
+msgstr "температура"
+
+#: medicine/models.py:26 medicine/models.py:27
+msgid "statistics"
+msgstr "статистика"
+
+#: medicine/models.py:31
+msgid "verdict"
+msgstr "вердикт"
+
+#: medicine/models.py:36 medicine/models.py:37
+msgid "diagnosis"
+msgstr "діагноз"
+
+#: medicine/models.py:61
+msgid "reason"
+msgstr "причина"
+
+#: medicine/models.py:62
+msgid "description"
+msgstr "опис"
+
+#: medicine/models.py:63
+msgid "expiration date"
+msgstr "дата закінчення"
+
+#: medicine/models.py:64
+msgid "time"
+msgstr "час"
+
+#: medicine/models.py:65
+msgid "days"
+msgstr "дні"
+
+#: medicine/models.py:70 medicine/models.py:75
+msgid "schedule"
+msgstr "розклад"
+
+#: medicine/models.py:71
+msgid "schedules"
+msgstr "розклади"
+
+#: medicine/models.py:77
+msgid "pending"
+msgstr "очікує"
+
+#: medicine/models.py:80
+msgid "notification"
+msgstr "сповіщення"
+
+#: medicine/models.py:81
+msgid "notifications"
+msgstr "сповіщення"
