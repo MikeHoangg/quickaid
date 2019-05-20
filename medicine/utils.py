@@ -18,6 +18,9 @@ def get_iot_data():
     data = ser.readline()
     if data:
         logger.info(data)
-        stats = Statistics.objects.create(**json.loads(data.decode()))
-        stats.get_diagnosis()
+        try:
+            stats = Statistics.objects.create(**json.loads(data.decode()))
+            stats.get_diagnosis()
+        except TypeError as e:
+            logger.error(e)
     ser.close()
