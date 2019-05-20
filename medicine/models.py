@@ -10,7 +10,7 @@ class PatchedMultiSelectField(MultiSelectField):
 
 
 class Statistics(models.Model):
-    min_blood_pressure   = models.PositiveIntegerField(verbose_name=_('min pressure'))
+    min_blood_pressure = models.PositiveIntegerField(verbose_name=_('min pressure'))
     max_blood_pressure = models.PositiveIntegerField(verbose_name=_('max pressure'))
     glucose_rate = models.FloatField(verbose_name=_('glucose rate'))
     protein_rate = models.FloatField(verbose_name=_('protein rate'))
@@ -21,6 +21,9 @@ class Statistics(models.Model):
     temperature = models.FloatField(verbose_name=_('temperature'))
     created = models.DateTimeField(verbose_name='created', auto_now_add=True, editable=False)
     user = models.ForeignKey(to='core.User', on_delete=models.CASCADE)
+
+    def get_diagnosis(self):
+        pass
 
     class Meta:
         verbose_name = _('statistics')
