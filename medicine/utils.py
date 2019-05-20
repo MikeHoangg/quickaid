@@ -1,5 +1,6 @@
 import json
 import logging
+from json import JSONDecodeError
 
 import serial
 
@@ -22,5 +23,7 @@ def get_iot_data():
             stats = Statistics.objects.create(**json.loads(data.decode()))
             stats.get_diagnosis()
         except TypeError as e:
+            logger.error(e)
+        except JSONDecodeError as e:
             logger.error(e)
     ser.close()
