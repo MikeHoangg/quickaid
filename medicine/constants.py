@@ -146,3 +146,25 @@ CHOLESTEROL_RATE = {
     'norm_min': 3,
     'norm_max': 6
 }
+
+HIGH_BLOOD_PRESSURE_ADVICE = _('Hypertension causes symptoms such as headache,'
+                               ' shortness of breath, dizziness, chest pain, heart palpitations and nosebleeds')
+LOW_BLOOD_PRESSURE_ADVICE = _('Low blood pressure can cause impaired blood supply in certain parts of the brain'
+                              ' responsible for hearing and vision, which can cause deafness and reduced vision')
+HIGH_GLUCOSE_ADVICE = _('Glucose elevation is observed when:diabetes, pancreatic tumors, stress and others.')
+LOW_GLUCOSE_ADVICE = _('A decrease in glucose level is observed when: diseases of the pancreas,'
+                       ' arsenic poisoning, alcohol poisoning and others.')
+HIGH_PROTEIN_ADVICE = _('Increased protein content in the blood is observed with: intestinal obstruction,'
+                        ' acute and chronic infectious diseases, etc.')
+LOW_PROTEIN_ADVICE = _('The decrease in the protein content in the blood is observed when:'
+                       ' pancreatitis, hepatitis, injuries, etc.')
+HIGH_ALBUMIN_ADVICE = _('An increase in the level of albumin is observed when dehydration of the body')
+LOW_ALBUMIN_ADVICE = _('The decrease in albumin level is observed when: malnutrition (insufficient intake of'
+                       ' proteins from food), chronic liver diseases, etc')
+HIGH_MYOGLOBIN_ADVICE = _('Increased myoglobin level is observed with:injuries, convulsions, burns.'
+                          ' Physiological elevation of myoglobin often occurs during muscle overload.')
+LOW_MYOGLOBIN_ADVICE = _('A decrease in myoglobin level is observed when: polymyositis.')
+HIGH_FERRITIN_ADVICE = _('An increase in the level of ferritin is observed when: acute hepatitis.')
+LOW_FERRITIN_ADVICE = _('A decrease in the level of ferritin is observed in case of iron deficiency anemia.')
+HIGH_TEMPERATURE_ADVICE = _('High temperature can cause bad feeling, weakness in limbs and whole body.')
+GOOD_HEALTH = _('Health is in good condition.')
