@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 13:26+0000\n"
+"POT-Creation-Date: 2019-05-21 19:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -119,14 +119,14 @@ msgstr ""
 #: medicine/constants.py:150
 msgid ""
 "Hypertension causes symptoms such as headache, shortness of breath, "
-"dizziness, chest pain, heart palpitations and nosebleeds"
+"dizziness, chest pain, heart palpitations and nosebleeds."
 msgstr ""
 
 #: medicine/constants.py:152
 msgid ""
 "Low blood pressure can cause impaired blood supply in certain parts of the "
 "brain responsible for hearing and vision, which can cause deafness and "
-"reduced vision"
+"reduced vision."
 msgstr ""
 
 #: medicine/constants.py:154
@@ -155,13 +155,13 @@ msgstr ""
 
 #: medicine/constants.py:161
 msgid ""
-"An increase in the level of albumin is observed when dehydration of the body"
+"An increase in the level of albumin is observed when dehydration of the body."
 msgstr ""
 
 #: medicine/constants.py:162
 msgid ""
 "The decrease in albumin level is observed when: malnutrition (insufficient "
-"intake of proteins from food), chronic liver diseases, etc"
+"intake of proteins from food), chronic liver diseases, etc."
 msgstr ""
 
 #: medicine/constants.py:164

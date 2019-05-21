@@ -1,11 +1,14 @@
+from django.utils.translation import gettext as _
 from rest_framework import serializers, fields
 
 from medicine.models import Statistics, Diagnosis, Schedule, Notification
 
 
 class DiagnosisSerializer(serializers.HyperlinkedModelSerializer):
+    verdict = serializers.SerializerMethodField()
+
     def get_verdict(self, obj):
-        return obj.get_verdict_display()
+        return "\r\n".join([_(dict(self.Meta.model.VERDICT_CHOICES)[verdict]) for verdict in obj.verdict])
 
     class Meta:
         model = Diagnosis

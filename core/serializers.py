@@ -6,9 +6,14 @@ User = get_user_model()
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
+    gender = serializers.SerializerMethodField()
+
+    def get_gender(self, obj):
+        return _(obj.get_gender_display())
+
     class Meta:
         model = User
-        fields = ('id', 'url', 'email')
+        fields = ('id', 'url', 'email', 'age', 'gender', 'first_name', 'last_name')
 
 
 class RegisterSerializer(serializers.Serializer):

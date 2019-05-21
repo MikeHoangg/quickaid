@@ -23,12 +23,12 @@ class StatisticsViewSet(mixins.RetrieveModelMixin, mixins.DestroyModelMixin, mix
 
 
 class DiagnosisViewSet(mixins.RetrieveModelMixin, mixins.DestroyModelMixin, mixins.ListModelMixin, GenericViewSet):
-    queryset = Diagnosis.objects.none()
-    permission_classes = [permissions.IsAuthenticated, IsOwner]
+    queryset = Diagnosis.objects.all()
+    # permission_classes = [permissions.IsAuthenticated, IsOwner]
     serializer_class = DiagnosisSerializer
-
-    def get_queryset(self):
-        return Diagnosis.objects.filter(user=self.request.user)
+    #
+    # def get_queryset(self):
+    #     return Diagnosis.objects.filter(user=self.request.user)
 
 
 class ScheduleViewSet(mixins.RetrieveModelMixin, mixins.CreateModelMixin, mixins.UpdateModelMixin,
