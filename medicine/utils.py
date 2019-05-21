@@ -20,10 +20,8 @@ def get_iot_data():
     if data:
         logger.info(data)
         try:
-            stats = Statistics.objects.create(**json.loads(data.decode()))
-            stats.get_diagnosis()
+            Statistics.objects.create(**json.loads(data.decode()))
         except TypeError as e:
             logger.error(e)
         except JSONDecodeError as e:
             logger.error(e)
-    ser.close()
