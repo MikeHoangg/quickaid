@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-19 23:59+0000\n"
+"POT-Creation-Date: 2019-05-21 13:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,7 @@ msgstr "статус персоналу"
 msgid "Designates whether the user can log into this admin site."
 msgstr "Визначає, чи може користувач увійти на адміністративний сайт."
 
-#: core/models.py:58 medicine/models.py:66
+#: core/models.py:58 medicine/models.py:163
 msgid "active"
 msgstr "активний"
 
@@ -73,7 +73,7 @@ msgstr ""
 msgid "date joined"
 msgstr "дата реєстрування"
 
-#: core/models.py:87 medicine/models.py:67
+#: core/models.py:87 medicine/models.py:164
 msgid "user"
 msgstr "користувач"
 
@@ -121,90 +121,177 @@ msgstr "г/л"
 msgid "mcg/l"
 msgstr "мкг/л"
 
-#: medicine/models.py:13
+#: medicine/constants.py:150
+msgid ""
+"Hypertension causes symptoms such as headache, shortness of breath, "
+"dizziness, chest pain, heart palpitations and nosebleeds"
+msgstr ""
+
+#: medicine/constants.py:152
+msgid ""
+"Low blood pressure can cause impaired blood supply in certain parts of the "
+"brain responsible for hearing and vision, which can cause deafness and "
+"reduced vision"
+msgstr ""
+
+#: medicine/constants.py:154
+msgid ""
+"Glucose elevation is observed when:diabetes, pancreatic tumors, stress and "
+"others."
+msgstr ""
+
+#: medicine/constants.py:155
+msgid ""
+"A decrease in glucose level is observed when: diseases of the pancreas, "
+"arsenic poisoning, alcohol poisoning and others."
+msgstr ""
+
+#: medicine/constants.py:157
+msgid ""
+"Increased protein content in the blood is observed with: intestinal "
+"obstruction, acute and chronic infectious diseases, etc."
+msgstr ""
+
+#: medicine/constants.py:159
+msgid ""
+"The decrease in the protein content in the blood is observed when: "
+"pancreatitis, hepatitis, injuries, etc."
+msgstr ""
+
+#: medicine/constants.py:161
+msgid ""
+"An increase in the level of albumin is observed when dehydration of the body"
+msgstr ""
+
+#: medicine/constants.py:162
+msgid ""
+"The decrease in albumin level is observed when: malnutrition (insufficient "
+"intake of proteins from food), chronic liver diseases, etc"
+msgstr ""
+
+#: medicine/constants.py:164
+msgid ""
+"Increased myoglobin level is observed with:injuries, convulsions, burns. "
+"Physiological elevation of myoglobin often occurs during muscle overload."
+msgstr ""
+
+#: medicine/constants.py:166
+msgid "A decrease in myoglobin level is observed when: polymyositis."
+msgstr ""
+
+#: medicine/constants.py:167
+msgid "An increase in the level of ferritin is observed when: acute hepatitis."
+msgstr ""
+
+#: medicine/constants.py:168
+msgid ""
+"A decrease in the level of ferritin is observed in case of iron deficiency "
+"anemia."
+msgstr ""
+
+#: medicine/constants.py:169
+msgid ""
+"High temperature can cause bad feeling, weakness in limbs and whole body."
+msgstr ""
+
+#: medicine/constants.py:170
+msgid "Health is in good condition."
+msgstr ""
+
+#: medicine/models.py:16
 msgid "min pressure"
 msgstr "нижній поріг кров'яного тиску"
 
-#: medicine/models.py:14
+#: medicine/models.py:17
 msgid "max pressure"
 msgstr "вурхній поріг кров'яного тиску"
 
-#: medicine/models.py:15
+#: medicine/models.py:18
 msgid "glucose rate"
 msgstr "концентрація глюкози"
 
-#: medicine/models.py:16
+#: medicine/models.py:19
 msgid "protein rate"
 msgstr "концентрація протеїну"
 
-#: medicine/models.py:17
+#: medicine/models.py:20
 msgid "albumin rate"
 msgstr "концентрація альбуміну"
 
-#: medicine/models.py:18
+#: medicine/models.py:21
 msgid "myoglobin rate"
 msgstr "концентрація міоглобіну"
 
-#: medicine/models.py:19
+#: medicine/models.py:22
 msgid "ferritin rate"
 msgstr "концентрація заліза"
 
-#: medicine/models.py:20
+#: medicine/models.py:23
 msgid "cholesterol rate"
 msgstr "концентрація холестерину"
 
-#: medicine/models.py:21
+#: medicine/models.py:24
 msgid "temperature"
 msgstr "температура"
 
-#: medicine/models.py:26 medicine/models.py:27
+#: medicine/models.py:31 medicine/models.py:32
 msgid "statistics"
 msgstr "статистика"
 
-#: medicine/models.py:31
+#: medicine/models.py:69
 msgid "verdict"
 msgstr "вердикт"
 
-#: medicine/models.py:36 medicine/models.py:37
+#: medicine/models.py:70
+msgid "start time"
+msgstr ""
+
+#: medicine/models.py:71
+#, fuzzy
+#| msgid "time"
+msgid "end time"
+msgstr "час"
+
+#: medicine/models.py:75 medicine/models.py:76
 msgid "diagnosis"
 msgstr "діагноз"
 
-#: medicine/models.py:61
+#: medicine/models.py:158
 msgid "reason"
 msgstr "причина"
 
-#: medicine/models.py:62
+#: medicine/models.py:159
 msgid "description"
 msgstr "опис"
 
-#: medicine/models.py:63
+#: medicine/models.py:160
 msgid "expiration date"
 msgstr "дата закінчення"
 
-#: medicine/models.py:64
+#: medicine/models.py:161
 msgid "time"
 msgstr "час"
 
-#: medicine/models.py:65
+#: medicine/models.py:162
 msgid "days"
 msgstr "дні"
 
-#: medicine/models.py:70 medicine/models.py:75
+#: medicine/models.py:167 medicine/models.py:172
 msgid "schedule"
 msgstr "розклад"
 
-#: medicine/models.py:71
+#: medicine/models.py:168
 msgid "schedules"
 msgstr "розклади"
 
-#: medicine/models.py:77
+#: medicine/models.py:174
 msgid "pending"
 msgstr "очікує"
 
-#: medicine/models.py:80
+#: medicine/models.py:177
 msgid "notification"
 msgstr "сповіщення"
 
-#: medicine/models.py:81
+#: medicine/models.py:178
 msgid "notifications"
 msgstr "сповіщення"
