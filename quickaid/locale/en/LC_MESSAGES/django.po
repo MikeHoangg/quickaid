@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 19:12+0000\n"
+"POT-Creation-Date: 2019-05-21 19:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,23 +76,23 @@ msgstr ""
 msgid "users"
 msgstr ""
 
-#: core/serializers.py:25
+#: core/serializers.py:30
 msgid "The two password fields didn't match."
 msgstr ""
 
-#: core/serializers.py:27
+#: core/serializers.py:32
 msgid "User with such email already exists."
 msgstr ""
 
-#: core/serializers.py:46
+#: core/serializers.py:51
 msgid "Must include \"email\" and \"password\"."
 msgstr ""
 
-#: core/serializers.py:57
+#: core/serializers.py:62
 msgid "User account is disabled."
 msgstr ""
 
-#: core/serializers.py:61
+#: core/serializers.py:66
 msgid "Unable to log in with provided credentials."
 msgstr ""
 
@@ -247,6 +247,38 @@ msgstr ""
 
 #: medicine/models.py:75 medicine/models.py:76
 msgid "diagnosis"
+msgstr ""
+
+#: medicine/models.py:148
+msgid "monday"
+msgstr ""
+
+#: medicine/models.py:149
+msgid "tuesday"
+msgstr ""
+
+#: medicine/models.py:150
+msgid "wednesday"
+msgstr ""
+
+#: medicine/models.py:151
+msgid "thursday"
+msgstr ""
+
+#: medicine/models.py:152
+msgid "friday"
+msgstr ""
+
+#: medicine/models.py:153
+msgid "saturday"
+msgstr ""
+
+#: medicine/models.py:154
+msgid "sunday"
+msgstr ""
+
+#: medicine/models.py:155
+msgid "everyday"
 msgstr ""
 
 #: medicine/models.py:158

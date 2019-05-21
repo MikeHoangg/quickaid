@@ -24,8 +24,16 @@ class StatisticsSerializer(serializers.HyperlinkedModelSerializer):
                   'albumin_rate', 'myoglobin_rate', 'ferritin_rate', 'cholesterol_rate', 'temperature', 'created')
 
 
+class PatchedMultipleChoiceField(fields.MultipleChoiceField):
+    def to_representation(self, value):
+        days = super().to_representation(value)
+        return {
+            _(dict(Schedule.DAYS_CHOICES)[item]) for item in days
+        }
+
+
 class ScheduleSerializer(serializers.HyperlinkedModelSerializer):
-    days = fields.MultipleChoiceField(choices=Schedule.DAYS_CHOICES, allow_blank=False)
+    days = PatchedMultipleChoiceField(choices=Schedule.DAYS_CHOICES, allow_blank=False)
 
     class Meta:
         model = Schedule

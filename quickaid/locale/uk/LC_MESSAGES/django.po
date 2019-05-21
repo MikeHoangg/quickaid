@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-21 19:12+0000\n"
+"POT-Creation-Date: 2019-05-21 19:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,23 +81,23 @@ msgstr "користувач"
 msgid "users"
 msgstr "користувачі"
 
-#: core/serializers.py:25
+#: core/serializers.py:30
 msgid "The two password fields didn't match."
 msgstr "Поля двох поролів не співпадають."
 
-#: core/serializers.py:27
+#: core/serializers.py:32
 msgid "User with such email already exists."
 msgstr "Користувач з такою електронною поштою вже зареєстрований."
 
-#: core/serializers.py:46
+#: core/serializers.py:51
 msgid "Must include \"email\" and \"password\"."
 msgstr "Треба зазначити \"електронну пошту\" та \"пароль\"."
 
-#: core/serializers.py:57
+#: core/serializers.py:62
 msgid "User account is disabled."
 msgstr "Обліковий запис користувача деактивований."
 
-#: core/serializers.py:61
+#: core/serializers.py:66
 msgid "Unable to log in with provided credentials."
 msgstr "Не вдалося увійти з наданими даними."
 
@@ -275,6 +275,38 @@ msgstr "час закінчення"
 #: medicine/models.py:75 medicine/models.py:76
 msgid "diagnosis"
 msgstr "діагноз"
+
+#: medicine/models.py:148
+msgid "monday"
+msgstr "понеділок"
+
+#: medicine/models.py:149
+msgid "tuesday"
+msgstr "вівторок"
+
+#: medicine/models.py:150
+msgid "wednesday"
+msgstr "середа"
+
+#: medicine/models.py:151
+msgid "thursday"
+msgstr "четвер"
+
+#: medicine/models.py:152
+msgid "friday"
+msgstr "п'ятниця"
+
+#: medicine/models.py:153
+msgid "saturday"
+msgstr "субота"
+
+#: medicine/models.py:154
+msgid "sunday"
+msgstr "неділя"
+
+#: medicine/models.py:155
+msgid "everyday"
+msgstr "кожен день"
 
 #: medicine/models.py:158
 msgid "reason"
