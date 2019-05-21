@@ -135,24 +135,24 @@ class Diagnosis(models.Model):
 
 
 class Schedule(models.Model):
-    MONDAY = 0
-    TUESDAY = 1
-    WEDNESDAY = 2
-    THURSDAY = 3
-    FRIDAY = 4
-    SATURDAY = 5
-    SUNDAY = 6
-    EVERYDAY = 7
+    MONDAY = 'mon'
+    TUESDAY = 'tue'
+    WEDNESDAY = 'wed'
+    THURSDAY = 'thu'
+    FRIDAY = 'fri'
+    SATURDAY = 'sat'
+    SUNDAY = 'sun'
+    EVERYDAY = 'evr'
 
     DAYS_CHOICES = (
-        (MONDAY, 'monday'),
-        (TUESDAY, 'tuesday'),
-        (WEDNESDAY, 'wednesday'),
-        (THURSDAY, 'thursday'),
-        (FRIDAY, 'friday'),
-        (SATURDAY, 'saturday'),
-        (SUNDAY, 'sunday'),
-        (EVERYDAY, 'everyday')
+        (MONDAY, _('monday')),
+        (TUESDAY, _('tuesday')),
+        (WEDNESDAY, _('wednesday')),
+        (THURSDAY, _('thursday')),
+        (FRIDAY, _('friday')),
+        (SATURDAY, _('saturday')),
+        (SUNDAY, _('sunday')),
+        (EVERYDAY, _('everyday'))
     )
 
     reason = models.TextField(verbose_name=_('reason'), null=True, blank=True)
