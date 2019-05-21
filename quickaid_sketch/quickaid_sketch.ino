@@ -8,11 +8,11 @@ float getFloatData(int min, int max){
 }
 void setup() {
   Serial.begin(9600);
+  randomSeed(analogRead(0));
   while (!Serial) continue;
 }
 
 void loop() {
-  randomSeed(analogRead(0));
   DynamicJsonDocument data(1024);
   int heart_rate_1 = getIntData(60, 170);
   int heart_rate_2 = getIntData(60, 170);
@@ -27,6 +27,5 @@ void loop() {
   data["temperature"] =  getFloatData(34, 43);
   data["user_id"] =  USER_ID;
   serializeJson(data, Serial);
-  Serial.println(analogRead(0));
-  delay(60000);
+  delay(300000);
 }

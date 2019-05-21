@@ -67,7 +67,7 @@ schedule = {
     },
     'get_statistics': {
         'task': 'get_statistics',
-        'schedule': crontab(minute="*/1")
+        'schedule': crontab(minute="*/5")
     },
     'get_diagnosis': {
         'task': 'get_diagnosis',

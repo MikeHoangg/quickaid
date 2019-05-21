@@ -35,13 +35,13 @@ def get_random_statistics():
     data.update({
         "max_blood_pressure": heart_rate_1 if heart_rate_1 > heart_rate_2 else heart_rate_2,
         "min_blood_pressure": heart_rate_1 if heart_rate_1 < heart_rate_2 else heart_rate_2,
-        "glucose_rate": random.uniform(2, 8),
+        "glucose_rate": round(random.uniform(2, 8), 2),
         "protein_rate": random.randint(50, 90),
         "albumin_rate": random.randint(10, 60),
         "myoglobin_rate": random.randint(10, 90),
         "ferritin_rate": random.randint(10, 130),
         "cholesterol_rate": random.randint(1, 10),
-        "temperature": random.uniform(34, 43),
+        "temperature": round(random.uniform(34, 43), 2),
         "user_id": 2
     })
 
