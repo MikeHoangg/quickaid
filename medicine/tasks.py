@@ -6,7 +6,7 @@ from django.contrib.auth import get_user_model
 from django.utils import timezone
 
 from medicine.models import Diagnosis, Notification
-from medicine.utils import get_iot_data
+from medicine.utils import get_iot_data, get_random_statistics
 from quickaid.celery import app
 
 User = get_user_model()
@@ -18,7 +18,8 @@ def get_statistics():
     Task to get statistics for certain user
     :return:
     """
-    get_iot_data()
+    # get_iot_data()
+    get_random_statistics()
 
 
 @app.task(name='get_diagnosis')
