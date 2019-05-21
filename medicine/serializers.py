@@ -1,22 +1,24 @@
 from rest_framework import serializers, fields
 
-from core.models import User
 from medicine.models import Statistics, Diagnosis, Schedule, Notification
 
 
 class DiagnosisSerializer(serializers.HyperlinkedModelSerializer):
+    def get_verdict(self, obj):
+        return obj.get_verdict_display()
+
     class Meta:
         model = Diagnosis
-        fields = ('id', 'url', 'statistics', 'verdict', 'created')
+        fields = ('id', 'url', 'verdict', 'start_time', 'end_time')
 
 
 class StatisticsSerializer(serializers.HyperlinkedModelSerializer):
-    diagnosis_set = DiagnosisSerializer(many=True)
+    diagnosis = DiagnosisSerializer()
 
     class Meta:
         model = Statistics
-        fields = ('id', 'url', 'min_blood_pressure', 'max_blood_pressure', 'glucose_rate', 'protein_rate', 'albumin_rate',
-                  'myoglobin_rate', 'ferritin_rate', 'cholesterol_rate', 'temperature', 'created', 'diagnosis_set')
+        fields = ('id', 'url', 'diagnosis', 'min_blood_pressure', 'max_blood_pressure', 'glucose_rate', 'protein_rate',
+                  'albumin_rate', 'myoglobin_rate', 'ferritin_rate', 'cholesterol_rate', 'temperature', 'created')
 
 
 class ScheduleSerializer(serializers.HyperlinkedModelSerializer):
@@ -27,7 +29,7 @@ class ScheduleSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('id', 'url', 'reason', 'description', 'expiration_date', 'time', 'days', 'active')
 
     def save(self, **kwargs):
-        self.validated_data.update({'user': User.objects.last()})
+        self.validated_data.update({'user': kwargs.get('user')})
         return super().save()
 
 

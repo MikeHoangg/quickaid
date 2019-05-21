@@ -7,12 +7,10 @@ from medicine.serializers import StatisticsSerializer, DiagnosisSerializer, Sche
 
 class IsOwner(permissions.BasePermission):
     def has_object_permission(self, request, view, obj):
-        if isinstance(obj, Diagnosis):
-            return obj.statistics.user == request.user
-        if isinstance(obj, Statistics):
+        if isinstance(obj, Diagnosis) or isinstance(obj, Statistics) or isinstance(obj, Schedule):
             return obj.user == request.user
-        if isinstance(obj, Schedule):
-            return obj.user == request.user
+        if isinstance(obj, Notification):
+            return obj.schedule.user == request.user
 
 
 class StatisticsViewSet(mixins.RetrieveModelMixin, mixins.DestroyModelMixin, mixins.ListModelMixin, GenericViewSet):
@@ -54,4 +52,3 @@ class NotificationViewSet(mixins.RetrieveModelMixin, mixins.UpdateModelMixin, mi
 
     def get_queryset(self):
         return Notification.objects.filter(schedule__user=self.request.user)
-
