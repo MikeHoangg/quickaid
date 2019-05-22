@@ -43,6 +43,9 @@ class ScheduleViewSet(mixins.RetrieveModelMixin, mixins.CreateModelMixin, mixins
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
 
+    def perform_update(self, serializer):
+        serializer.save(user=self.request.user)
+
 
 class NotificationViewSet(mixins.RetrieveModelMixin, mixins.UpdateModelMixin, mixins.DestroyModelMixin,
                           mixins.ListModelMixin, GenericViewSet):
